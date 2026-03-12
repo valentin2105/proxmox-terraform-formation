@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Proxmox | The Open-Source VMware Alternative</title>
+<!-- Tailwind CSS v3 with Plugins -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Google Fonts: Inter -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          },
+          colors: {
+            proxmox: {
+              orange: '#E57000',
+              dark: '#0B0F19',
+              slate: '#1F2937',
+              blue: '#3B82F6'
+            }
+          }
+        }
+      }
+    }
+  </script>
+<style data-purpose="custom-animations">
+    @keyframes float {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0px); }
+    }
+    .animate-float {
+      animation: float 6s ease-in-out infinite;
+    }
+    .glass-effect {
+      background: rgba(255, 255, 255, 0.03);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+  </style>
+</head>
+<body class="bg-proxmox-dark text-slate-200 font-sans selection:bg-proxmox-orange selection:text-white">
+<!-- BEGIN: Navigation -->
+<nav class="fixed top-0 w-full z-50 glass-effect border-b border-white/5" data-purpose="main-navigation">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between items-center h-20">
+<div class="flex items-center gap-2">
+<!-- Mock Proxmox Logo -->
+<div class="w-8 h-8 bg-proxmox-orange rounded flex items-center justify-center font-bold text-white text-xl">P</div>
+<span class="text-2xl font-extrabold tracking-tight text-white uppercase">Proxmox</span>
+</div>
+<div class="hidden md:flex space-x-8 text-sm font-medium">
+<a class="hover:text-proxmox-orange transition-colors" href="#features">Features</a>
+<a class="hover:text-proxmox-orange transition-colors" href="#comparison">Compare</a>
+<a class="hover:text-proxmox-orange transition-colors" href="#tech">Technology</a>
+</div>
+<div>
+<a class="bg-proxmox-orange hover:bg-orange-600 text-white px-6 py-2.5 rounded-lg font-semibold transition-all shadow-lg shadow-orange-500/20" href="#contact">
+            Get Started
+          </a>
+</div>
+</div>
+</div>
+</nav>
+<!-- END: Navigation -->
+<!-- BEGIN: Hero Section -->
+<section class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden" data-purpose="hero-section">
+<!-- Background Decor -->
+<div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full -z-10">
+<div class="absolute top-20 left-1/4 w-96 h-96 bg-proxmox-orange/10 rounded-full blur-[120px]"></div>
+<div class="absolute bottom-20 right-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-[120px]"></div>
+</div>
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-proxmox-orange/30 bg-proxmox-orange/5 text-proxmox-orange text-xs font-bold uppercase tracking-widest mb-6">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-proxmox-orange opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-proxmox-orange"></span>
+</span>
+        Enterprise-Ready Virtualization
+      </div>
+<h1 class="text-5xl md:text-7xl font-extrabold text-white mb-6 leading-tight">
+        Proxmox: The Modern <br/>
+<span class="text-transparent bg-clip-text bg-gradient-to-r from-proxmox-orange to-orange-400">Open-Source Alternative</span> to VMware
+      </h1>
+<p class="max-w-2xl mx-auto text-xl text-slate-400 mb-10 leading-relaxed">
+        Say goodbye to hefty licensing fees and vendor lock-in. Experience the industry's most robust open-source server management platform.
+      </p>
+<div class="flex flex-col sm:flex-row justify-center gap-4">
+<button class="px-8 py-4 bg-proxmox-orange hover:bg-orange-600 text-white rounded-xl font-bold text-lg transition-all transform hover:scale-105 shadow-xl shadow-orange-500/20">
+          Start Your Migration
+        </button>
+<button class="px-8 py-4 bg-white/5 hover:bg-white/10 text-white border border-white/10 rounded-xl font-bold text-lg transition-all">
+          View Live Demo
+        </button>
+</div>
+<!-- Dashboard Visual Placeholder -->
+<div class="mt-20 relative animate-float">
+<div class="glass-effect p-2 rounded-2xl shadow-2xl border border-white/10">
+<img alt="Proxmox Management Interface" class="rounded-xl w-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAj5ykZPETyJjyWhcTZXyKYSNwSGWp9PAdjSclCq9FP48vrTAfCLirh6gM8Um77iaY9zrqJMZbQFhRl5HdumtqcVJqabW2HtrQK9vessa_krK9_ehve5haKm2ykI7GPOvHFcUFRR9Mk43W_HEyst0zpAZmiyU-y2CYCGBtc9XidK_xFZa4msNPMO-wqe_a-ypI_Zv7M6YM0bbkIf0YdEix_Rgn4ZEmncyhNlOEoLw2LGIRg2Syjk68NX9VDg0BYGihGWIsbbhG7_Lk"/>
+</div>
+</div>
+</div>
+</section>
+<!-- END: Hero Section -->
+<!-- BEGIN: Value Proposition -->
+<section class="py-24 bg-proxmox-dark relative" data-purpose="value-proposition" id="features">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Card 1 -->
+<div class="glass-effect p-8 rounded-3xl hover:border-proxmox-orange/50 transition-colors group">
+<div class="w-14 h-14 bg-proxmox-orange/10 rounded-2xl flex items-center justify-center mb-6 text-proxmox-orange group-hover:scale-110 transition-transform">
+<svg class="w-8 h-8" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path></svg>
+</div>
+<h3 class="text-2xl font-bold text-white mb-4">Enterprise Virtualization</h3>
+<p class="text-slate-400 leading-relaxed">Combine KVM and LXC to manage virtual machines and containers on a single platform with maximum performance.</p>
+</div>
+<!-- Card 2 -->
+<div class="glass-effect p-8 rounded-3xl hover:border-proxmox-orange/50 transition-colors group">
+<div class="w-14 h-14 bg-proxmox-orange/10 rounded-2xl flex items-center justify-center mb-6 text-proxmox-orange group-hover:scale-110 transition-transform">
+<svg class="w-8 h-8" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path></svg>
+</div>
+<h3 class="text-2xl font-bold text-white mb-4">Integrated Backup &amp; HA</h3>
+<p class="text-slate-400 leading-relaxed">Built-in high availability and incremental backups with Proxmox Backup Server integration. Business continuity by design.</p>
+</div>
+<!-- Card 3 -->
+<div class="glass-effect p-8 rounded-3xl hover:border-proxmox-orange/50 transition-colors group">
+<div class="w-14 h-14 bg-proxmox-orange/10 rounded-2xl flex items-center justify-center mb-6 text-proxmox-orange group-hover:scale-110 transition-transform">
+<svg class="w-8 h-8" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path></svg>
+</div>
+<h3 class="text-2xl font-bold text-white mb-4">No Vendor Lock-in</h3>
+<p class="text-slate-400 leading-relaxed">Full control over your data and infrastructure. 100% open-source software with professional support when you need it.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- END: Value Proposition -->
+<!-- BEGIN: Comparison Table -->
+<section class="py-24 bg-proxmox-dark/50" data-purpose="comparison-section" id="comparison">
+<div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-bold text-white mb-4">Why Switch from VMware?</h2>
+<p class="text-slate-400">Compare the flexibility and cost-effectiveness of our platform.</p>
+</div>
+<div class="overflow-x-auto rounded-3xl border border-white/10 glass-effect">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="border-b border-white/10">
+<th class="p-6 text-slate-200 font-semibold">Features</th>
+<th class="p-6 text-proxmox-orange font-bold text-center">Proxmox VE</th>
+<th class="p-6 text-slate-500 font-semibold text-center">VMware vSphere</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-white/5">
+<tr>
+<td class="p-6 font-medium">Licensing Model</td>
+<td class="p-6 text-center text-green-400">Open-Source / Optional Support</td>
+<td class="p-6 text-center text-slate-400">Expensive Per-Core Subscription</td>
+</tr>
+<tr>
+<td class="p-6 font-medium">Hypervisor Support</td>
+<td class="p-6 text-center text-green-400">KVM &amp; LXC (Integrated)</td>
+<td class="p-6 text-center text-slate-400">ESXi Only</td>
+</tr>
+<tr>
+<td class="p-6 font-medium">Backup Integration</td>
+<td class="p-6 text-center text-green-400">Included Native Support</td>
+<td class="p-6 text-center text-slate-400">Requires 3rd Party Licenses</td>
+</tr>
+<tr>
+<td class="p-6 font-medium">Cluster Management</td>
+<td class="p-6 text-center text-green-400">Included (Multi-Master)</td>
+<td class="p-6 text-center text-slate-400">Requires vCenter License</td>
+</tr>
+<tr>
+<td class="p-6 font-medium">Storage Options</td>
+<td class="p-6 text-center text-green-400">ZFS, Ceph, LVM, NFS</td>
+<td class="p-6 text-center text-slate-400">vSAN (Additional Cost)</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<!-- END: Comparison Table -->
+<!-- BEGIN: Technical Excellence -->
+<section class="py-24 relative overflow-hidden" data-purpose="tech-stack" id="tech">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex flex-col lg:flex-row items-center gap-16">
+<div class="flex-1">
+<h2 class="text-4xl font-bold text-white mb-8">Technical Excellence Built on Standard Linux</h2>
+<div class="space-y-6">
+<div class="flex gap-4">
+<div class="flex-shrink-0 w-12 h-12 bg-white/5 rounded-full flex items-center justify-center border border-white/10 text-proxmox-orange font-bold">KVM</div>
+<div>
+<h4 class="text-white font-semibold mb-1">KVM Hypervisor</h4>
+<p class="text-slate-400">Industry-leading virtualization performance for Windows and Linux VMs.</p>
+</div>
+</div>
+<div class="flex gap-4">
+<div class="flex-shrink-0 w-12 h-12 bg-white/5 rounded-full flex items-center justify-center border border-white/10 text-proxmox-orange font-bold">LXC</div>
+<div>
+<h4 class="text-white font-semibold mb-1">Linux Containers</h4>
+<p class="text-slate-400">Run lightweight isolated environments with near-zero overhead.</p>
+</div>
+</div>
+<div class="flex gap-4">
+<div class="flex-shrink-0 w-12 h-12 bg-white/5 rounded-full flex items-center justify-center border border-white/10 text-proxmox-orange font-bold">ZFS</div>
+<div>
+<h4 class="text-white font-semibold mb-1">ZFS Storage</h4>
+<p class="text-slate-400">Native support for self-healing, snapshotting, and data replication.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="flex-1 w-full">
+<div class="relative">
+<div class="absolute -inset-1 bg-gradient-to-r from-proxmox-orange to-blue-500 rounded-3xl blur opacity-25"></div>
+<div class="relative bg-slate-900 rounded-3xl p-8 border border-white/10">
+<pre class="text-sm font-mono text-proxmox-orange overflow-x-auto"><code>// Multi-node Cluster Config
+cluster {
+  name: "enterprise-prod-01"
+  nodes: 3
+  quorum: "expected_votes 3"
+}
+
+// Software Defined Storage
+ceph {
+  status: "HEALTH_OK"
+  monitors: ["10.0.0.1", "10.0.0.2"]
+  osd: 12
+}</code>
+              </pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: Technical Excellence -->
+<!-- BEGIN: Trust Logos -->
+<section class="py-16 border-y border-white/5" data-purpose="social-proof">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<p class="text-center text-slate-500 uppercase tracking-widest text-xs font-bold mb-10">Trusted by Global Infrastructure Teams</p>
+<div class="flex flex-wrap justify-center items-center gap-12 opacity-50 grayscale hover:grayscale-0 transition-all">
+<div class="text-2xl font-black text-white">DEB<span class="text-proxmox-orange">IAN</span></div>
+<div class="text-2xl font-black text-white">CEPH</div>
+<div class="text-2xl font-black text-white">UBUNTU</div>
+<div class="text-2xl font-black text-white">INTEL</div>
+<div class="text-2xl font-black text-white">AMD</div>
+</div>
+</div>
+</section>
+<!-- END: Trust Logos -->
+<!-- BEGIN: Final CTA -->
+<section class="py-24" data-purpose="final-cta" id="contact">
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+<div class="bg-gradient-to-br from-proxmox-slate to-proxmox-dark p-12 md:p-20 rounded-[3rem] border border-white/10 relative overflow-hidden">
+<div class="absolute top-0 right-0 w-64 h-64 bg-proxmox-orange/10 rounded-full blur-3xl -mr-20 -mt-20"></div>
+<h2 class="text-4xl md:text-5xl font-extrabold text-white mb-6 relative">Empower Your Infrastructure Today</h2>
+<p class="text-xl text-slate-400 mb-10 relative">
+          Join thousands of enterprises migrating to the future of open-source virtualization. Proxmox VE is free to use, professional to support.
+        </p>
+<div class="flex flex-col sm:flex-row justify-center gap-4 relative">
+<button class="px-10 py-5 bg-white text-proxmox-dark rounded-2xl font-bold text-lg hover:bg-slate-100 transition-all">
+            Download Proxmox VE
+          </button>
+<button class="px-10 py-5 bg-proxmox-orange text-white rounded-2xl font-bold text-lg hover:bg-orange-600 transition-all shadow-xl shadow-orange-500/20">
+            Contact Enterprise Sales
+          </button>
+</div>
+</div>
+</div>
+</section>
+<!-- END: Final CTA -->
+<!-- BEGIN: Footer -->
+<footer class="py-12 border-t border-white/5" data-purpose="footer">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex flex-col md:flex-row justify-between items-center gap-6">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 bg-proxmox-orange rounded flex items-center justify-center font-bold text-white text-xs">P</div>
+<span class="text-lg font-bold tracking-tight text-white uppercase">Proxmox</span>
+</div>
+<p class="text-slate-500 text-sm">
+          © 2024 Proxmox Server Solutions GmbH. All rights reserved.
+        </p>
+<div class="flex gap-6 text-sm text-slate-400">
+<a class="hover:text-white" href="#">Privacy Policy</a>
+<a class="hover:text-white" href="#">Legal Notice</a>
+<a class="hover:text-white" href="#">Imprint</a>
+</div>
+</div>
+</div>
+</footer>
+<!-- END: Footer -->
+</body></html>
+
+
